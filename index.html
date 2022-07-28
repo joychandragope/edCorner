@@ -6,6 +6,8 @@
     <title>EdCorner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
+    <!-- Font Awesome Icon  -->
+    <script src="https://kit.fontawesome.com/9d65eed2ea.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="logo/title-logo.png" type="image/x-icon">
     <!-- Override Style -->
@@ -14,14 +16,13 @@
   <body>
     <!-- =============== Header section Start =====================  -->
     <header >
-      <!-- Navbigation Bar  -->
-      <nav class="p-3 mb-3 border-bottom shadow">
+      <!-- Navbigation Bar Start-->
+      <div class="d-none d-md-block d-lg-block">
+        <nav class="p-3 mb-3 border-bottom shadow ">
   
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src="logo/logo.png" alt=""></use></svg>
-              </a> -->
+              
               <a class="navbar-brand me-3" href="#">
                 <img src="logo/logo.png" alt="" width="160" height="43">
               </a>
@@ -60,7 +61,68 @@
             </div>
           </div>
       </nav>
+    </div>
+    <!-- ============== Collapsible Navbar Start -->
+    <section class="d-block d-md-none d-lg-none">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-3">
+          <h5 class="text-dark h6">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 pe-4 link-secondary">Overview</a></li>
+              <li><a href="#" class="nav-link px-2 pe-4 link-dark">Inventory</a></li>
+              <li><a href="#" class="nav-link px-2 pe-4 link-dark">Customers</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+            </ul>
+          </h5>
+          
+          <span class="text-success">
+            <form class="col-12 col-lg-auto mb-3" role="search">
+              <input type="search" class="form-control fst-italic" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="text-end">
+              <div class="dropdown text-end pb-3">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 rounded-circle" width="32" height="32" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-outline-dark fw-bold me-2 ">Login</button>
+              <button type="button" class="btn btn-warning fw-bold">Sign-up</button>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 me-0 p-0" height="30" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              </svg>
+              
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand me-3" href="#">
+            <img src="logo/logo.png" alt="" width="160" height="43">
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            
+          </button>
+          
+        </div>
+      </div>
+    </section>
+    <!-- ============== Collapsible Navbar End -->
       <!-- Navigation Bar End  -->
+      
+     
+     
 
       <!-- Top Banner Slider Start  -->
       <section class="container">
@@ -339,7 +401,7 @@
 
         </div>
         
-        <div class="container p-5 w-75 mb-5">
+        <div class="container p-5 w-100 mb-5">
           <!-- Questions part -->
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -408,12 +470,12 @@
       <!--================= Frequently Asked Questions End -->
 
       <!-- ============== Trusted companies Start -->
-      <section class="container d-none d-md-none d-lg-block">
+      <section class="container d-none d-md-none d-lg-block pb-5">
         <div>
           <h1 class="text-center fw-bold pb-3 pt-5 mt-5">Trusted by over 800+ companies</h1>
           <div>
-            <img class="img-fluid p-4" src="images/company/company-2.png" alt="">
             <img class="img-fluid p-4" src="images/company/company-1.png" alt="">
+            <img class="img-fluid p-4" src="images/company/company-2.png" alt="">
             <img class="img-fluid p-4" src="images/company/company-3.png" alt="">
             <img class="img-fluid p-4" src="images/company/company-4.png" alt="">
             <img class="img-fluid p-4" src="images/company/company-5.png" alt="">
@@ -423,11 +485,31 @@
         </div>
       </section>
       <!-- ============== Trusted companies End -->
-
-
-
     </main>
-    <!-- ========================Main Section End  -->
+    <!-- ===============  Main Section End  -->
+
+    <!--======================== Footer Section Start -->
+    <footer class="container-fluid pt-5 mt-5 bg-dark">
+      <section class="p-5 d-flex justify-content-center align-items-center">
+        <div>
+          <div >
+            <h1 class="fw-bold text-white text-center pb-3">EdCorner</h1>
+            <p class="text-light text-center">Office 41, Zawaya Buildin, Ghala Muscat,
+              Sultanate of Oman</p>
+            <p class="text-center"><a class="text-decoration-none text-light" target="_blank" href="">Privacy Ploicy</a> <span class="text-light">|</span> <a class="text-decoration-none text-light" target="_blank" href="">Terms of use</a></p>
+          </div>
+          <div class="text-center p-3">
+            <a target="_blank" href=""><i class="p-2 fa-brands fa-facebook fa-2xl text-light"></i></a>
+            <a target="_blank" href=""><i class="p-2 fa-brands fa-twitter fa-2xl text-light"></i></a>
+            <a target="_blank" href=""><i class="p-2 fa-brands fa-linkedin fa-2xl text-light"></i></a>
+            <a target="_blank" href=""><i class="p-2 fa-brands fa-youtube fa-2xl text-light"></i></a>
+            <a target="_blank" href=""><i class="p-2 fa-brands fa-square-instagram fa-2xl text-light"></i></a>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+    <!--========================= Footer Section End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
