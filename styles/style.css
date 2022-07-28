@@ -9,3 +9,8 @@
   background: #000;
   opacity: 0.7;
 }
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
