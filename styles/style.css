@@ -1,4 +1,4 @@
-
+/* Background opacity  */
 .carousel-item::before {
   content: "";
   display: block;
@@ -10,6 +10,7 @@
   background: #000;
   opacity: 0.7;
 }
+/* Banner Title Position set  */
 .carousel-caption{
     top: 50%;
     transform: translateY(-65%);

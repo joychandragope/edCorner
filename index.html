@@ -1,208 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EdCorner</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
     <!-- Font Awesome Icon  -->
-    <script src="https://kit.fontawesome.com/9d65eed2ea.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d65eed2ea.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="logo/title-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo/title-logo.png" type="image/x-icon" />
     <!-- Override Style -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- =============== Header section Start =====================  -->
-    <header >
+    <header>
       <!-- Navbigation Bar Start-->
       <div class="d-none d-md-block d-lg-block">
-        <nav class="p-3 mb-3 border-bottom shadow ">
-  
+        <nav class="p-3 mb-3 border-bottom shadow">
           <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
               <a class="navbar-brand me-3" href="#">
-                <img src="logo/logo.png" alt="" width="160" height="43">
+                <img src="logo/logo.png" alt="" width="160" height="43" />
               </a>
-      
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 pe-4 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 pe-4 link-dark">Certification</a></li>
-                <li><a href="#" class="nav-link px-2 pe-4 link-dark">Guides</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Categories</a></li>
+
+              <ul
+                class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+              >
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-secondary fw-bold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-dark fw-bold"
+                    >Certification</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-dark fw-bold"
+                    >Guides</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 link-dark fw-bold"
+                    >Categories</a
+                  >
+                </li>
               </ul>
-      
-              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control fst-italic" placeholder="Search..." aria-label="Search">
+
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                role="search"
+              >
+                <input
+                  type="search"
+                  class="form-control fst-italic"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
               </form>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 me-2" height="30" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 me-2"
+                height="30"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
               </svg>
               <div class="text-end">
-                <button type="button" class="btn btn-outline-dark fw-bold me-2 ">Login</button>
-                <button type="button" class="btn btn-warning fw-bold">Sign-up</button>
+                <button type="button" class="btn btn-outline-dark fw-bold me-2">
+                  Login
+                </button>
+                <button type="button" class="btn btn-warning fw-bold">
+                  Sign-up
+                </button>
               </div>
               <div class="dropdown text-end ms-3">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 rounded-circle" width="32" height="32" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                <a
+                  href="#"
+                  class="d-block link-dark text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 rounded-circle"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </a>
                 <ul class="dropdown-menu text-small">
                   <li><a class="dropdown-item" href="#">New project...</a></li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>
               </div>
             </div>
           </div>
-      </nav>
-    </div>
-    <!-- ============== Collapsible Navbar Start -->
-    <section class="d-block d-md-none d-lg-none">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light p-3">
-          <h5 class="text-dark h6">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 pe-4 link-secondary">Home</a></li>
-              <li><a href="#" class="nav-link px-2 pe-4 link-dark">Certification</a></li>
-              <li><a href="#" class="nav-link px-2 pe-4 link-dark">Guides</a></li>
-              <li><a href="#" class="nav-link px-2 link-dark">Categories</a></li>
-            </ul>
-          </h5>
-          
-          <span class="text-success">
-            <form class="col-12 col-lg-auto mb-3" role="search">
-              <input type="search" class="form-control fst-italic" placeholder="Search..." aria-label="Search">
-            </form>
-            <div class="text-end">
-              <div class="dropdown text-end pb-3">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 rounded-circle" width="32" height="32" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu text-small">
-                  <li><a class="dropdown-item" href="#">New project...</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
+        </nav>
+      </div>
+      <!-- ============== Collapsible Navbar Start -->
+      <section class="d-block d-md-none d-lg-none">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-3">
+            <h5 class="text-dark h6">
+              <ul
+                class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+              >
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-secondary">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-dark"
+                    >Certification</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 pe-4 link-dark">Guides</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-2 link-dark">Categories</a>
+                </li>
+              </ul>
+            </h5>
+
+            <span class="text-success">
+              <form class="col-12 col-lg-auto mb-3" role="search">
+                <input
+                  type="search"
+                  class="form-control fst-italic"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+              </form>
+              <div class="text-end">
+                <div class="dropdown text-end pb-3">
+                  <a
+                    href="#"
+                    class="d-block link-dark text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 rounded-circle"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu text-small">
+                    <li>
+                      <a class="dropdown-item" href="#">New project...</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-outline-dark fw-bold me-2">
+                  Login
+                </button>
+                <button type="button" class="btn btn-warning fw-bold">
+                  Sign-up
+                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 me-0 p-0"
+                  height="30"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
+                </svg>
               </div>
-              <button type="button" class="btn btn-outline-dark fw-bold me-2 ">Login</button>
-              <button type="button" class="btn btn-warning fw-bold">Sign-up</button>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 me-0 p-0" height="30" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-              </svg>
-              
-            </div>
-          </span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="navbar navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand me-3" href="#">
-            <img src="logo/logo.png" alt="" width="160" height="43">
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            
-          </button>
-          
+        <div class="navbar navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand me-3" href="#">
+              <img src="logo/logo.png" alt="" width="160" height="43" />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- ============== Collapsible Navbar End -->
+      </section>
+      <!-- ============== Collapsible Navbar End -->
       <!-- Navigation Bar End  -->
-      
+
       <!-- Top Banner Slider Start  -->
       <section class="container">
-        <div id="carouselExampleCaptions" class=" carousel slide" data-bs-ride="false">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="carousel-inner" >
-            <div class="carousel-item active " >
-              <img class="img-fluid" src="images/cover/cover-1.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-fluid"
+                src="images/cover/cover-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
               <div class="carousel-caption d-block">
-                <h1 class="fw-bolder"> Learn without limits </h1>
-                <p> Start, switch, or advance your career with more than 5,000 courses </p>
+                <h1 class="fw-bolder">Learn without limits</h1>
+                <p>
+                  Start, switch, or advance your career with more than 5,000
+                  courses
+                </p>
                 <button class="btn btn-primary">Get Started</button>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+              <img
+                src="images/cover/cover-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
               <div class="carousel-caption d-block">
-                <h1 class="fw-bold ">Learn on your schedule</h1>
-                <p>Study any topic, anytime. Explore thousands of courses for the lowest price ever!</p>
+                <h1 class="fw-bold">Learn on your schedule</h1>
+                <p>
+                  Study any topic, anytime. Explore thousands of courses for the
+                  lowest price ever!
+                </p>
                 <button class="btn btn-primary">Get Started</button>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="img-fluid" src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+              <img
+                class="img-fluid"
+                src="images/cover/cover-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
               <div class="carousel-caption d-block">
-                <h1 class="fw-bold ">Expand your career opportunities</h1>
+                <h1 class="fw-bold">Expand your career opportunities</h1>
                 <p>Build in-demand tech skills with free access</p>
                 <button class="btn btn-primary">Get Started</button>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
       <!-- Top Banner Slider End  -->
-
     </header>
     <!-- =============== Header section End =====================  -->
 
     <!--========================= Main Section Start  -->
     <main class="container">
-      <section class="mt-5 ">
-
+      <section class="mt-5">
         <!-- Course header title start-->
-        <div class=" d-flex flex-column align-items-center mb-5">
+        <div class="d-flex flex-column align-items-center mb-5">
           <h1 class="fw-bold text-center">Discover Our Popular Courses</h1>
-            <p class="text-center fs-5">Best online courses from the world's top Instructor and companies..</p>
+          <p class="text-center fs-5">
+            Best online courses from the world's top Instructor and companies..
+          </p>
         </div>
         <!-- Course header title end -->
 
         <!--===================== Recommended Courses list Start -->
         <div class="container">
           <!-- ================= Course Row-1 Start ======================-->
-          <div class="row ">
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+          <div class="row">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100 "  src="images/course/course-1.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-1.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">Data Science Foundations</h5>
-                <p>Enrich your skills in Data Science by strengthening your foundational knowledge.Data Science Foundation is a high-level </p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Enrich your skills in Data Science by strengthening your
+                  foundational knowledge.Data Science Foundation is a high-level
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100"  src="images/course/course-2.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-2.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">AWS Developer</h5>
-                <p>Amazon Web Services is the largest cloud provider in the world. This course will teach you how to develop, deploy, and integrate web applications with AWS.</p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Amazon Web Services is the largest cloud provider in the
+                  world. This course will teach you how to develop, deploy, and
+                  integrate web applications with AWS.
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
           </div>
@@ -210,24 +394,42 @@
 
           <!-- ================= Course Row-2 Start ======================-->
           <div class="row">
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100"  src="images/course/course-3.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-3.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">Foundational Cloud Computing</h5>
-                <p>Cloud Computing is, more and more, being used by everyone for just about everything. But what exactly IS cloud computing? </p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Cloud Computing is, more and more, being used by everyone for
+                  just about everything. But what exactly IS cloud computing?
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100"  src="images/course/course-4.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-4.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">Fundamental Of UI/UX Design</h5>
-                <p>Covers Regression, Decision Trees, SVM, Neural Networks, CNN, Time Series Forecasting and more using both Python & R</p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Covers Regression, Decision Trees, SVM, Neural Networks, CNN,
+                  Time Series Forecasting and more using both Python & R
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
           </div>
@@ -236,161 +438,257 @@
 
           <!-- ================= Course Row-3 Start ======================-->
           <div class="row">
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100"  src="images/course/course-5.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-5.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">JavaScript Complete Basic 2022</h5>
-                <p>Learn JavaScript with this complete course on the market. From beginner to advanced.Expert Instructors. Lifetime Access</p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Learn JavaScript with this complete course on the market. From
+                  beginner to advanced.Expert Instructors. Lifetime Access
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center">
+            <div
+              class="col-12 col-md-12 col-lg-6 mt-2 border border-2 rounded ps-0 d-md-flex d-lg-flex justify-content-center align-items-center"
+            >
               <div>
-                <img class="img-fluid w-100"  src="images/course/course-6.png" alt="">
+                <img
+                  class="img-fluid w-100"
+                  src="images/course/course-6.png"
+                  alt=""
+                />
               </div>
               <div class="ps-4 pt-3">
                 <h5 class="fw-bold">Adobe Illustrator 2022</h5>
-                <p>Ultimate A-Z Guide for Adobe Illustrator 2022 Go From Basic to Advanced with 100 Projects + 100 Assignments From Scratch.</p>
-                  <h5 class="fw-bold text-info">Price : 20$</h5>
+                <p>
+                  Ultimate A-Z Guide for Adobe Illustrator 2022 Go From Basic to
+                  Advanced with 100 Projects + 100 Assignments From Scratch.
+                </p>
+                <h5 class="fw-bold text-info">Price : 20$</h5>
               </div>
             </div>
           </div>
           <!--=============================== Course Row-3 End ================================== -->
         </div>
-      
+
         <!-- ==================== Recommended Courses list End -->
 
         <!-- ==================== Recommended Courses Button Start -->
-        
-        <div class="w-100 d-flex justify-content-center mt-4 mb-5">
-          <button class="btn btn-primary rounded fw-bold mt-5 mb-5">See More Courses</button>
-        </div>
-        
-        <!-- ==================== Recommended Courses Button End -->
 
+        <div class="w-100 d-flex justify-content-center mt-4 mb-5">
+          <button class="btn btn-primary rounded fw-bold mt-5 mb-5">
+            See More Courses
+          </button>
+        </div>
+
+        <!-- ==================== Recommended Courses Button End -->
       </section>
 
       <!-- ======================= Institute information(OP-1) -->
       <section class="container mb-5">
-        <div >
+        <div>
           <div class="row d-sm-flex">
-            <div class="col-lg-6 col-sm-6 ps-0 ">
-              <img class="img-fluid rounded" src="images/working.png" alt="">
+            <div class="col-lg-6 col-sm-6 ps-0">
+              <img class="img-fluid rounded" src="images/working.png" alt="" />
             </div>
 
-            <div class="col-lg-6 col-sm-6 d-flex flex-column justify-content-center align-items-center">
+            <div
+              class="col-lg-6 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+            >
               <h1 class="fw-bold">Explore The EdCorner Institute</h1>
-              <p>Online Courses Institute offer an ever growing range of high quality and informative online courses. Institute create courses on... 
-                
+              <p>
+                Online Courses Institute offer an ever growing range of high
+                quality and informative online courses. Institute create courses
+                on...
+
                 <span class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button
+                        class="accordion-button text-danger"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
                         See More...
                       </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
                       <div class="accordion-body">
-                        all the topics that students want to learn. You can learn high-quality, well-structured and easy to understand courses. 
-
-                Online Courses Institute wants to make it possible that each student can learn courses easily without any difficulty. You can gain clear and absolutely correct information from our courses. You will happy to learn. ,   
+                        all the topics that students want to learn. You can
+                        learn high-quality, well-structured and easy to
+                        understand courses. Online Courses Institute wants to
+                        make it possible that each student can learn courses
+                        easily without any difficulty. You can gain clear and
+                        absolutely correct information from our courses. You
+                        will happy to learn. ,
                       </div>
                     </div>
                   </div>
                 </span>
               </p>
 
-
-                <div class="d-flex mt-4">
-                  <div class="me-4">
-                    <h2 class="fw-bold">3.2K+</h2>
-                    <p>Online Course</p>
-                  </div>
-                  <div class="me-4">
-                    <h2 class="fw-bold">600+</h2>
-                    <p>Expert member</p>
-                  </div>
-                  <div>
-                    <h2 class="fw-bold">1K+</h2>
-                    <p>Rating & Review</p>
-                  </div>
+              <div class="d-flex mt-4">
+                <div class="me-4">
+                  <h2 class="fw-bold">3.2K+</h2>
+                  <p>Online Course</p>
                 </div>
+                <div class="me-4">
+                  <h2 class="fw-bold">600+</h2>
+                  <p>Expert member</p>
+                </div>
+                <div>
+                  <h2 class="fw-bold">1K+</h2>
+                  <p>Rating & Review</p>
+                </div>
+              </div>
 
-                <!-- Read More Button  -->
-                <button class="btn btn-primary fw-bold mt-4">Read More</button>
-              
+              <!-- Read More Button  -->
+              <button class="btn btn-primary fw-bold mt-4">Read More</button>
             </div>
           </div>
         </div>
-
       </section>
       <!-- ======================= Institute information(OP-1) End -->
 
       <!-- Ready To Join Section start  -->
       <section class="container bg-info mt-5 mb-5 p-5 rounded">
-        <div class="d-lg-flex justify-content-around align-items-center justify-content-sm-center justify-content-md-center">
-          <div class="p-4 ">
+        <div
+          class="d-lg-flex justify-content-around align-items-center justify-content-sm-center justify-content-md-center"
+        >
+          <div class="p-4">
             <h1 class="fw-bold text-start text-white">Ready to join?</h1>
-            <p class="text-start text-light">Join now and start receiving valuable member benefits. The first step in the process is to click on the join button to register
-                  </p>
+            <p class="text-start text-light">
+              Join now and start receiving valuable member benefits. The first
+              step in the process is to click on the join button to register
+            </p>
           </div>
-          <div class="p-5" >
-            <div >
-              <button type="button" class="btn btn-light fw-bold  pt-3 pb-3 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register</button>
+          <div class="p-5">
+            <div>
+              <button
+                type="button"
+                class="btn btn-light fw-bold pt-3 pb-3 fs-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+              >
+                Register
+              </button>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter Recipient Name">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        New message
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label"
+                            >Recipient:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="recipient-name"
+                            placeholder="Enter Recipient Name"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label"
+                            >Message:</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                          ></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Send message
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
           </div>
         </div>
-
       </section>
 
       <!-- Ready To Join Section end  -->
 
       <!-- Student Feedback  Start -->
-      <section class="container pt-5 ">
+      <section class="container pt-5">
         <h1 class="fw-bold text-center">Some Students Feedback</h1>
-        <p class="fs-5 text-center pt-3 pb-4">600+ people are already learning on EdCorner</p>
- <!-- ================ Feedback Section -->
+        <p class="fs-5 text-center pt-3 pb-4">
+          600+ people are already learning on EdCorner
+        </p>
+
+        <!-- ================ Feedback Section Start==================================-->
         <section>
-        
           <div class="row text-center d-flex justify-content-center">
-            <div class="col-md-4 mb-5 mb-md-0">
+            <div class="col-md-4 col-md-12 col-lg-4 mb-5 mb-md-0 border shadow">
               <div class="d-flex justify-content-center mb-4">
-                <img src="images/student/student-5.png"
-                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+                <img
+                  src="images/student/student-5.png"
+                  class="rounded-circle shadow-1-strong"
+                  width="150"
+                  height="150"
+                />
               </div>
               <h5 class="mb-3">Maria Smantha</h5>
               <h6 class="text-primary mb-3">Web Developer</h6>
               <p class="px-xl-3">
-                <i class="fas fa-quote-left pe-2"></i>“Greetings sir, I just wanted to share something which could help me improve as a pupil if needed. I have been a fan of the techniques that you teach, and make sure to practice them every day. I can only imagine the intensity of pressure it might have to deal with so many students. Nevertheless, lately, I haven’t been chosen to be a part of any of the teams, and I really wish to be a star student of yours. So, I would request your insights, if any, to help me gauge my focus on any particular thing if required, to be able to stand strong as per your expectations. 
+                <i class="fas fa-quote-left pe-2"></i>“Greetings sir, I just
+                wanted to share something which could help me improve as a pupil
+                if needed. I have been a fan of the techniques that you teach,
+                and make sure to practice them every day. I can only imagine the
+                intensity of pressure it might have to deal with so many
+                students. Nevertheless, lately, I haven’t been chosen to be a
+                part of any of the teams, and I really wish to be a star student
+                of yours. So, I would request your insights, if any, to help me
+                gauge my focus on any particular thing if required, to be able
+                to stand strong as per your expectations.
               </p>
               <ul class="list-unstyled d-flex justify-content-center mb-0">
                 <li>
@@ -410,15 +708,28 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 mb-5 mb-md-0">
+            <div
+              class="col-md-4 mb-5 mb-md-0 ms-3 col-md-12 col-lg-4 border shadow"
+            >
               <div class="d-flex justify-content-center mb-4">
-                <img src="images/student/student-6.png"
-                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+                <img
+                  src="images/student/student-6.png"
+                  class="rounded-circle shadow-1-strong"
+                  width="150"
+                  height="150"
+                />
               </div>
               <h5 class="mb-3">Lisa Cudrow</h5>
               <h6 class="text-primary mb-3">Graphic Designer</h6>
               <p class="px-xl-3">
-                <i class="fas fa-quote-left pe-2"></i>I have been waiting to find the right moment and share a piece of my life with you, hoping it would bring a smile to your face too. All my life, I have dealt with piercing gazes because of my learning disability. However, the last few weeks for me have been tremendously boosting. I came across someone like you, who saw me instead of my learning difficulty and didn’t even flinch for a second to pause and pay any attention to it.”
+                <i class="fas fa-quote-left pe-2"></i>I have been waiting to
+                find the right moment and share a piece of my life with you,
+                hoping it would bring a smile to your face too. All my life, I
+                have dealt with piercing gazes because of my learning
+                disability. However, the last few weeks for me have been
+                tremendously boosting. I came across someone like you, who saw
+                me instead of my learning difficulty and didn’t even flinch for
+                a second to pause and pay any attention to it.”
               </p>
               <ul class="list-unstyled d-flex justify-content-center mb-0">
                 <li>
@@ -438,101 +749,214 @@
                 </li>
               </ul>
             </div>
-            
           </div>
-          
         </section>
         <div class="d-flex justify-content-center pt-4">
           <nav aria-label="Page navigation example ">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link bg-success text-light" href="#">Previous</a></li>
-              <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active"><a class="page-link" href="#">2</a></li>
-              <li class="page-item "><a class="page-link" href="#">3</a></li>
-              <li class="page-item "><a class="page-link bg-success text-light" href="#">Next</a></li>
+              <li class="page-item">
+                <a class="page-link bg-success text-light" href="#">Previous</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link bg-success text-light" href="#">Next</a>
+              </li>
             </ul>
           </nav>
         </div>
-        
-        <!-- ======================= Feedback  -->
 
+        <!-- ======================= Feedback  -->
       </section>
       <!-- Student Feedback  End -->
-
 
       <!-- ================= Frequently Asked Questions Start -->
       <section class="container">
         <div>
-          <h1 class="text-center fw-bold pb-3 pt-5 mt-5">Frequently Asked Questions</h1>
-          <p class="text-center fs-5">It is a long established fact that a reader will be distracted by the readable <br>
-            content of a page when looking at its layout.</p>
-
+          <h1 class="text-center fw-bold pb-3 pt-5 mt-5">
+            Frequently Asked Questions
+          </h1>
+          <p class="text-center fs-5">
+            It is a long established fact that a reader will be distracted by
+            the readable <br />
+            content of a page when looking at its layout.
+          </p>
         </div>
-        
+
         <div class="container p-5 w-100 mb-5">
           <!-- Questions part -->
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fw-bold fs-5 text-dark bg-success bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button
+                  class="accordion-button fw-bold fs-5 text-dark bg-success bg-opacity-50"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
                   Difference between flexbox and grid?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
                 <div class="accordion-body">
-                  <strong> Grid: CSS Grid Layout, is a two-dimensional grid-based layout system with rows and columns,</strong> making it easier to design web pages without having to use floats and positioning. Like tables, grid layout allow us to align elements into columns and rows.To get started you have to define a container element as a grid with <code>display: grid;</code><br>
+                  <strong>
+                    Grid: CSS Grid Layout, is a two-dimensional grid-based
+                    layout system with rows and columns,</strong
+                  >
+                  making it easier to design web pages without having to use
+                  floats and positioning. Like tables, grid layout allow us to
+                  align elements into columns and rows.To get started you have
+                  to define a container element as a grid with
+                  <code>display: grid;</code><br />
 
-                  <strong> Flexbox: The CSS Flexbox offers a one-dimensional layout.</strong> It is helpful in allocating and aligning the space among items in a container (made of grids). It works with all kinds of display devices and screen sizes. To get started you have to define a container element as a grid with <code> display: flex;</code>
-
+                  <strong>
+                    Flexbox: The CSS Flexbox offers a one-dimensional
+                    layout.</strong
+                  >
+                  It is helpful in allocating and aligning the space among items
+                  in a container (made of grids). It works with all kinds of
+                  display devices and screen sizes. To get started you have to
+                  define a container element as a grid with
+                  <code> display: flex;</code>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button
+                  class="accordion-button collapsed fw-bold fs-5 text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
                   Difference between Bootstrap and Tailwind?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
                 <div class="accordion-body">
-                  <strong>Bootstrap is an open-source framework that is used to design responsive websites better,</strong> faster, and easier. It is a beginner-friendly and the most popular open-source framework that includes HTML, CSS, and JavaScript. Bootstrap can be used to create web applications with any server-side Technology like Java, PHP, etc., and its responsive design allows platforms like Mobile phones, tablets, and computers. Bootstrap contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, icons, and other interface components. It is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.<br><br>
-                  <strong>Tailwind first version was released back on the 1st of November, 2017.</strong>  Tailwind CSS is a utility-first CSS framework for building custom user interfaces rapidly and efficiently. Tailwind CSS offers customizability and flexibility to transform the appearance and feel of the elements. It is a highly customizable, low-level CSS framework, and it provides all the building blocks the developer needs to build a fantastic interface for any website.
+                  <strong
+                    >Bootstrap is an open-source framework that is used to
+                    design responsive websites better,</strong
+                  >
+                  faster, and easier. It is a beginner-friendly and the most
+                  popular open-source framework that includes HTML, CSS, and
+                  JavaScript. Bootstrap can be used to create web applications
+                  with any server-side Technology like Java, PHP, etc., and its
+                  responsive design allows platforms like Mobile phones,
+                  tablets, and computers. Bootstrap contains CSS and
+                  JavaScript-based design templates for typography, forms,
+                  buttons, navigation, icons, and other interface components. It
+                  is based on object-oriented CSS. Bootstrap helps to design and
+                  develop website templates quickly.<br /><br />
+                  <strong
+                    >Tailwind first version was released back on the 1st of
+                    November, 2017.</strong
+                  >
+                  Tailwind CSS is a utility-first CSS framework for building
+                  custom user interfaces rapidly and efficiently. Tailwind CSS
+                  offers customizability and flexibility to transform the
+                  appearance and feel of the elements. It is a highly
+                  customizable, low-level CSS framework, and it provides all the
+                  building blocks the developer needs to build a fantastic
+                  interface for any website.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button
+                  class="accordion-button collapsed fw-bold fs-5 text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
                   What is CSS box model?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
                 <div class="accordion-body">
-                  In CSS, the term <strong> "box model" is used when talking about design and layout.</strong> The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.<br><br>
-                  When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+                  In CSS, the term
+                  <strong>
+                    "box model" is used when talking about design and
+                    layout.</strong
+                  >
+                  The CSS box model is essentially a box that wraps around every
+                  HTML element. It consists of: margins, borders, padding, and
+                  the actual content.<br /><br />
+                  When you set the width and height properties of an element
+                  with CSS, you just set the width and height of the content
+                  area. To calculate the full size of an element, you must also
+                  add padding, borders and margins.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button
+                  class="accordion-button collapsed fw-bold fs-5 text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
                   What is a semantic tag?
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
                 <div class="accordion-body">
-                  <strong> Semantic HTML or semantic markup is HTML that introduces meaning to the web page</strong> rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.
-
-                    On the flip side of this equation, tags such as <code>.b</code> and <code>.i</code> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup. 
+                  <strong>
+                    Semantic HTML or semantic markup is HTML that introduces
+                    meaning to the web page</strong
+                  >
+                  rather than just presentation. For example, a
+                  <p>
+                    tag indicates that the enclosed text is a paragraph. This is
+                    both semantic and presentational because people know what
+                    paragraphs are, and browsers know how to display them. On
+                    the flip side of this equation, tags such as
+                    <code>.b</code> and <code>.i</code> are not semantic. They
+                    define only how the text should look (bold or italic), and
+                    don't provide any additional meaning to the markup.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Question part end  -->
-
         </div>
-
       </section>
 
       <!--================= Frequently Asked Questions End -->
@@ -540,15 +964,40 @@
       <!-- ============== Trusted companies Start -->
       <section class="container d-none d-md-none d-lg-block pb-5">
         <div>
-          <h1 class="text-center fw-bold pb-3 pt-5 mt-5">Trusted by over 800+ companies</h1>
+          <h1 class="text-center fw-bold pb-3 pt-5 mt-5">
+            Trusted by over 800+ companies
+          </h1>
           <div>
-            <img class="img-fluid p-4" src="images/company/company-1.png" alt="">
-            <img class="img-fluid p-4" src="images/company/company-2.png" alt="">
-            <img class="img-fluid p-4" src="images/company/company-3.png" alt="">
-            <img class="img-fluid p-4" src="images/company/company-4.png" alt="">
-            <img class="img-fluid p-4" src="images/company/company-5.png" alt="">
-            <img class="img-fluid p-4" src="images/company/company-6.png" alt="">
-            
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-1.png"
+              alt=""
+            />
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-2.png"
+              alt=""
+            />
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-3.png"
+              alt=""
+            />
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-4.png"
+              alt=""
+            />
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-5.png"
+              alt=""
+            />
+            <img
+              class="img-fluid p-4"
+              src="images/company/company-6.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -560,24 +1009,48 @@
     <footer class="container-fluid pt-5 mt-5 bg-dark">
       <section class="p-5 d-flex justify-content-center align-items-center">
         <div>
-          <div >
+          <div>
             <h1 class="fw-bold text-white text-center pb-3">EdCorner</h1>
-            <p class="text-light text-center">Office 41, Zawaya Buildin, Ghala Muscat,
-              Sultanate of Oman</p>
-            <p class="text-center"><a class="text-decoration-none text-light" target="_blank" href="">Privacy Ploicy</a> <span class="text-light">|</span> <a class="text-decoration-none text-light" target="_blank" href="">Terms of use</a></p>
+            <p class="text-light text-center">
+              Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman
+            </p>
+            <p class="text-center">
+              <a class="text-decoration-none text-light" target="_blank" href=""
+                >Privacy Ploicy</a
+              >
+              <span class="text-light">|</span>
+              <a class="text-decoration-none text-light" target="_blank" href=""
+                >Terms of use</a
+              >
+            </p>
           </div>
           <div class="text-center p-3">
-            <a target="_blank" href=""><i class="p-2 fa-brands fa-facebook fa-2xl text-light"></i></a>
-            <a target="_blank" href=""><i class="p-2 fa-brands fa-twitter fa-2xl text-light"></i></a>
-            <a target="_blank" href=""><i class="p-2 fa-brands fa-linkedin fa-2xl text-light"></i></a>
-            <a target="_blank" href=""><i class="p-2 fa-brands fa-youtube fa-2xl text-light"></i></a>
-            <a target="_blank" href=""><i class="p-2 fa-brands fa-square-instagram fa-2xl text-light"></i></a>
+            <a target="_blank" href=""
+              ><i class="p-2 fa-brands fa-facebook fa-2xl text-light"></i
+            ></a>
+            <a target="_blank" href=""
+              ><i class="p-2 fa-brands fa-twitter fa-2xl text-light"></i
+            ></a>
+            <a target="_blank" href=""
+              ><i class="p-2 fa-brands fa-linkedin fa-2xl text-light"></i
+            ></a>
+            <a target="_blank" href=""
+              ><i class="p-2 fa-brands fa-youtube fa-2xl text-light"></i
+            ></a>
+            <a target="_blank" href=""
+              ><i
+                class="p-2 fa-brands fa-square-instagram fa-2xl text-light"
+              ></i
+            ></a>
           </div>
         </div>
       </section>
-
     </footer>
     <!--========================= Footer Section End -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
